@@ -25,7 +25,7 @@ SECRET_KEY = 'sa5kdjr()kaw24cbmdo2e#%pucnzyvv5l03f=twzk2(m83s9z('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','ivarlabs.azurewebsites.net']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
 # Application definition
@@ -130,3 +130,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
+
+import os
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static"),
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
