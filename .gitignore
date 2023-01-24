@@ -1,0 +1,6 @@
+*.env
+
+portfolio/portfolio/__pycache__*
+portfolio/migrations/__pycache__*
+
+portfolio/__pycache__*
